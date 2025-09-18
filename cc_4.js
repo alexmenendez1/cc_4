@@ -24,3 +24,10 @@ for (let product of products) // Sets up switch, creates a "box" of array above
             discount = 0
 }
 }
+if (customerType === "senior")
+{
+    discount += .07 ;
+} else {
+    discount ;
+}
+for 
