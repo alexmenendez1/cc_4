@@ -1,8 +1,8 @@
 let products= [
-{sku: "sku-001", name:"iPhone", category:"electronics", price:1,inventory:100},
+{sku: "sku-001", name:"Speaker", category:"electronics", price:1,inventory:100},
 {sku: "sku-002", name:"Blue Jeans",category:"apparel",price:2,inventory:150},
 {sku: "sku-003", name:"Steak",category:"grocerices",price:3,inventory:75},
-{sku: "sku-004", name:"PlayStation",category:"electronics",price:4,inventory:50},
+{sku: "sku-004", name:"Charger",category:"electronics",price:4,inventory:50},
 {sku: "sku-005", name:"Baseball Hat",category:"apparel",price:5,inventory:150}
 ];
 
@@ -30,4 +30,10 @@ if (customerType === "senior")
 } else {
     discount ;
 }
-for 
+let customers = [
+    [products[0], products[1], products[2]], 
+    [products[1], products[4], products[5]],
+    [products[2], products[3], products[4]]
+];
+for(let customer = customers.length, ${discount}, product.inventory -- 1)
+
