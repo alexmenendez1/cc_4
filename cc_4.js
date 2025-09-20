@@ -25,12 +25,19 @@ for (let product of products) // Sets up switch, creates a "box" of array above
 }
 }
 
-extraDiscount = 0
-if (customerType === "senior")
-{
-    extraDiscount += .07 ;
-} else {
-    discount ;
+
+let customers = [
+    {name:"Alex", customerType:"", cart:products[4]},
+    {name:"Bill", customerType:"senior", cart:products[3]},
+    {name:"Chris", customerType:"", cart: products[5]}
+];
+
+for (let customer in customers){
+    console.log(`${customer} is a customer.`);
+    console.log(products.inventory-1);
+    console.log(products.sku);
+    
 }
+
 
 
