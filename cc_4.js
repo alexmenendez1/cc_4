@@ -49,6 +49,8 @@ for (let product in products){
 final =Object.entries(products)
 console.log(final)
 
+h 
+
   
 
 
