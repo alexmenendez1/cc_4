@@ -24,7 +24,15 @@ for (let product of products) // Sets up switch, creates a "box" of array above
             discount = 0
 }
 }
-
+let customerType;
+let extraDiscount = 0
+if (customerType === "senior")
+{
+    discount += .07 ;
+    extraDiscount += .07 ;
+} else {
+    discount ;
+}
 
 let customers = [
     {name:"Alex", customerType:"", cart:products[4]},
