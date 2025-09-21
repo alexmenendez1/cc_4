@@ -26,27 +26,36 @@ for (let product of products) // Sets up switch, creates a "box" of array above
             discount = 0
 }
 }
-let customerType = "student"; // or "senior" or "regular"
+
+let customerType = "student"; 
 let extraDiscount = 0;
 if (customerType === "student") extraDiscount = 0.05;
 else if (customerType === "senior") extraDiscount = 0.07;
 
+
+
 for (let i = 1; i <= 3; i++) {
   let total = 0;
   for (const item of products) {
-    total += item.price;   // price already category-discounted in Step 3
-    item.inventory--;      // decrement inventory
+    total += item.price;   
+    item.inventory--;     
   }
-  const finalTotal = total * (1 - extraDiscount); // extraDiscount from Step 4
+  const finalTotal = total * (1 - extraDiscount); 
   console.log(`Customer ${i}: $${finalTotal.toFixed(2)}`);
+  console.log(`Extra Discount ${extraDiscount}`)
 }
-for (let product in products){
-    console.log(name+ "Baseball" + products[4].price* (discount + extraDisocunt));
+for (const key in products[0]) {
+console.log(`${key}: ${products[0][key]}`);
+console.log(`${key}: ${products[0][key]}`);
+console.log(`${key}: ${products[1][key]}`);
+console.log(`${key}: ${products[2][key]}`);
+console.log(`${key}: ${products[3][key]}`);
+console.log(`${key}: ${products[4][key]}`);
 }
-final =Object.entries(products)
-console.log(final)
 
-h 
+for (const [key, value] of Object.entries(products[1])) {
+  console.log(`${key}: ${value}`);
+}
 
   
 
