@@ -26,29 +26,20 @@ for (let product of products) // Sets up switch, creates a "box" of array above
             discount = 0
 }
 }
-let customerType;
-let extraDiscount = 0
-if (customerType === "senior")
-{
-    discount += .07 ;
-    extraDiscount += .07 ;
-} else {
+let customerType = "student"; // or "senior" or "regular"
+let extraDiscount = 0;
+if (customerType === "student") extraDiscount = 0.05;
+else if (customerType === "senior") extraDiscount = 0.07;
+
+for (let i = 1; i <= 3; i++) {
+  let total = 0;
+  for (const item of products) {
+    total += item.price;   // price already category-discounted in Step 3
+    item.inventory--;      // decrement inventory
+  }
+  const finalTotal = total * (1 - extraDiscount); // extraDiscount from Step 4
+  console.log(`Customer ${i}: $${finalTotal.toFixed(2)}`);
 }
-
-let customers = [
-{name:"Customer 1", customerType :"regular", purchases:[products[1],products[4]]},
-{name:"Customer 2",customerType:"regular",purchases:[products[0], products[2]]},
-{name: "Customer 3",  customerType:"senior",purchases:[products[3], products[4]]},
-];
-
-for (let i = 1; i <=3; i++)
-    {
-    let subtotal = 0;
-   console.log(`You are customer number ${i}. Your total is dollars`);
-   console.log(`Your discount is ${discount}.`);
-   console.log(products[4].inventory -=1);
-    }
-
 for (let product in products){
     console.log(name+ "Baseball" + products[4].price* (discount + extraDisocunt));
 }
