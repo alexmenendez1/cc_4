@@ -35,6 +35,12 @@ if (customerType === "senior")
 } else {
 }
 
+let customers = [
+{name:"Customer 1", customerType :"regular", purchases:[products[1],products[4]]},
+{name:"Customer 2",customerType:"regular",purchases:[products[0], products[2]]},
+{name: "Customer 3",  customerType:"senior",purchases:[products[3], products[4]]},
+];
+
 for (let i = 1; i <=3; i++)
     {
     let subtotal = 0;
